@@ -1,0 +1,167 @@
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    align-items: center;
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 500px;
+}
+
+.wrapper__img {
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 50%;
+}
+
+.wrapper__letter {
+    background-color: var(--white);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 25px;
+    width: 50%;
+}
+
+.wrapper__letter-perfume {
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.wrapper__letter h2 {
+    color: var(--veryDarkBlue);
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.wrapper__letter p {
+    color: var(--darkGrayishBlue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 90%;
+}
+
+.wrapper__letter_price {
+    align-items: center;
+    display: flex;
+    
+}
+
+.wrapper__letter_price h2 {
+    color: var(--darkCyan);
+}
+
+.wrapper__letter_price p {
+    padding-left: 15px;
+    text-decoration: line-through;
+    
+}
+
+button {
+    align-items: center;
+    background-color: var(--darkCyan);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+    padding: 15px;
+    transition: all .1s ease-in;
+    width: 90%;
+}
+
+button:hover {
+    background-color: var(--veryDarkBlue);
+}
+
+.wrapper__letter-button img {
+    width: 12px;
+}
+
+.wrapper__letter-button span {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.attribution {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.attribution a{
+    color: var(--darkCyan);
+}
+
+@media all and (max-width: 768px) {
+    .container{
+        padding: 20px 0;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .wrapper__img {
+        background-image: url(../images/image-product-mobile.jpg);
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        height: 240px;
+        width: 100%;
+    }
+
+    .wrapper__letter {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        width: 100%;
+    }
+
+    .wrapper__letter h2 {
+        width: 90%;
+    }
+
+    .wrapper__letter p {
+        padding-left: 0;
+        width: 85%;
+    }
+}
+    
