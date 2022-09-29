@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/iEerii/productPreviewCardComponentMain]
-- Live Site URL: [https://github.com/iEerii]
+- Solution URL: [GitHub](https://github.com/iEerii/productPreviewCardComponentMain)
+- Live Site URL: [GitHub](https://github.com/iEerii)
 
 ### Built with
 
